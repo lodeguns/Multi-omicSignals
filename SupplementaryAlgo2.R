@@ -124,7 +124,7 @@ oscillation.waveform.scores  <- function(altern, l.sc, t0, N, n.path){
     }
     s <- p.s/(p.l * (N-1))
     c.v <- l.s/p.l
-    #print(j)
+    # print(j)
     # print(s.s)
     # print(s.f)
     score.test = FALSE
