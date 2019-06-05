@@ -7,7 +7,7 @@ This repository contains the manuscript mentioned in the title, and associated s
 
 
 ### Inter-organisms amplitude consensus (IOAC) procedure 
-In order to compare the signals between different organisms, an amplitude discretization process was applied. This procedure it is called: Inter Organisms Amplitude Consensus (IOAC) [here]("IOAC Procedure/Data_norm.R") . The relative dependencies to the RData datasets are explicitly indicated in the source code.
+In order to compare the signals between different organisms, an amplitude discretization process was applied. This procedure it is called: Inter Organisms Amplitude Consensus (IOAC) [here](ioac_procedure/Data_norm.R) . The relative dependencies to the RData datasets are explicitly indicated in the source code.
 
 ### Median change point detector in order to search the periodicity windows ( Algorithm 1) 
 
