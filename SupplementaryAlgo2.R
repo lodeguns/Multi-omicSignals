@@ -1,6 +1,6 @@
 library(compiler)
 library(ggplot2)
-
+ 
 oscillation.waveform.scores  <- function(altern, l.sc, t0, N, n.path){
   score.test = TRUE
   while(score.test){
