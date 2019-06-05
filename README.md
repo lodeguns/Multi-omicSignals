@@ -14,4 +14,4 @@ In order to compare the signals between different organisms, an amplitude discre
 ### Periodicity/Oscillation score and Velocity of propagation (Algorithm 2)
 ![image](figures/plot1_supp.png)
 
-The optimized algorithm with which the scores of periodicity and propagation velocity of the multi-omic spatial signal were calculated is showed in R in [this file](SupplementaryAlgo2.R).
+The optimized algorithm with which the scores of periodicity and propagation velocity of the multi-omic spatial signal were calculated is [here](SupplementaryAlgo2.R).
