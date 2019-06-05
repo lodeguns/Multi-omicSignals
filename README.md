@@ -12,6 +12,7 @@ In order to compare the signals between different organisms, an amplitude discre
 ### Median change point detector in order to search the periodicity windows ( Algorithm 1) 
 
 ### Periodicity/Oscillation score and Velocity of propagation (Algorithm 2)
+The optimized algorithm with which the scores of periodicity and propagation velocity of the multi-omic spatial signal were calculated is [here](SupplementaryAlgo2.R).
+
 ![image](figures/plot1_supp.png)
 
-The optimized algorithm with which the scores of periodicity and propagation velocity of the multi-omic spatial signal were calculated is [here](SupplementaryAlgo2.R).
