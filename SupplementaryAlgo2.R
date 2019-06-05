@@ -154,7 +154,7 @@ get.o.w.s.cmp = cmpfun(oscillation.waveform.scores)
 name.pathway  = "pathway number X"
 multi.omic.signal = c(1,5,8,1,5,8,1,5,7,1,4,6,1,4,2,2,1,2,1,8,1,6,7)
 IOAC.bins         = 9
-algo1.period.estimation = 3
-get.o.w.s.cmp(multi.omic.signal, length(multi.omic.signal), algo1.period.estimation, IOAC.bins, name.pathway)
+algo1.periodicity.estimation = 3
+get.o.w.s.cmp(multi.omic.signal, length(multi.omic.signal), algo1.periodicity.estimation, IOAC.bins, name.pathway)
 
 
