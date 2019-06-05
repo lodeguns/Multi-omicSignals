@@ -11,6 +11,6 @@ This repository contains the manuscript mentioned in the title, and associated s
 ### Median change point detector in order to search the periodicity windows ( Algorithm 1) 
 
 ### Periodicity/Oscillation score and Velocity of propagation (Algorithm 2)
-![image](plot1_supp.png)
+![image](figures/plot1_supp.png)
 
 The optimized algorithm with which the scores of periodicity and propagation velocity of the multi-omic spatial signal were calculated is showed in R in [this file](SupplementaryAlgo2.R).
