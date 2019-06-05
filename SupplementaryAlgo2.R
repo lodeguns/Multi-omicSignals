@@ -1,4 +1,5 @@
 library(compiler)
+library(ggplot2)
 
 oscillation.waveform.scores  <- function(altern, l.sc, t0, N, n.path){
   score.test = TRUE
@@ -151,13 +152,13 @@ oscillation.waveform.scores  <- function(altern, l.sc, t0, N, n.path){
 
 
 get.o.w.s.cmp = cmpfun(oscillation.waveform.scores)
+
+# Ex1
 name.pathway  = "pathway number X"
 multi.omic.signal = c(1,5,7,1,5,8,1,5,7,1,5,7,1,5,8,1,5,7,1,5,7,1,5,8)
 IOAC.bins         = 8
 algo1.period.estimation = 3
 get.o.w.s.cmp(multi.omic.signal, length(multi.omic.signal), algo1.period.estimation, IOAC.bins, name.pathway)
-
-library(ggplot2)
 multi.omic.signal.df <- as.data.frame(multi.omic.signal)
 multi.omic.signal.df["gene.order"] <- 1:length(multi.omic.signal)
 ggplot(multi.omic.signal.df, aes(x=gene.order, y=multi.omic.signal )) +
@@ -165,14 +166,13 @@ ggplot(multi.omic.signal.df, aes(x=gene.order, y=multi.omic.signal )) +
   geom_point()+
   scale_linetype_manual(values=c("twodash", "dotted"))
 
-
+# Ex2
 name.pathway  = "pathway number Y"
 multi.omic.signal = c(1,5,7,3,5,8,2,3,5,1,4,6,1,4,3,2,1,2,1,8,1,6,7)
 IOAC.bins         = 8
 algo1.period.estimation = 3
 get.o.w.s.cmp(multi.omic.signal, length(multi.omic.signal), algo1.period.estimation, IOAC.bins, name.pathway)
 
-library(ggplot2)
 multi.omic.signal.df <- as.data.frame(multi.omic.signal)
 multi.omic.signal.df["gene.order"] <- 1:length(multi.omic.signal)
 ggplot(multi.omic.signal.df, aes(x=gene.order, y=multi.omic.signal )) +
