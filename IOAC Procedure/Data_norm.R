@@ -8,14 +8,12 @@ require(progress)
 require(classInt)
 require(nortest) # https://www.r-bloggers.com/normality-tests-for-continuous-data/
 
-work.dir <- "~/Dropbox/Lavoro FRANPA 2017/Data Comb/data_extracted/"
-work.dir2 <- "~/Dropbox/Lavoro FRANPA 2017/Data Extraction/"
-work.dir3 <- "~/Dropbox/Lavoro FRANPA 2017/"
-load("~/Dropbox/Lavoro FRANPA 2017/Data Extraction/lorg.RData")
+work.dir <- "~/Data Comb/data_extracted/"
+work.dir2 <- "~/Data Extraction/"
+work.dir3 <- ""
+load("~/Data Extraction/lorg.RData")
 source(paste(work.dir3, "FunzioniAccessorie.R", sep = ""))
 selected.org <- c(2, 3, 4, 7, 8, 10, 11, 12, 13, 14, 15, 17)
-#
-#selected.org <- c(2, 7, 10, 11, 12, 14, 15, 17) #those with more than 100 pathways in common.
 
 
 
@@ -143,9 +141,9 @@ for (j in 1:length(list.orgs))
 
 
 alpha = 0.05
-# cai.test.result < 0.05
-# mw.test.result  < 0.05
-# exp.test.result < 0.05
+cai.test.result < 0.05
+mw.test.result  < 0.05
+exp.test.result < 0.05
 
 prop.table(table(round(cai.test.result))) * 100
 prop.table(table(round(mw.test.result))) * 100
