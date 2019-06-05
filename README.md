@@ -43,13 +43,13 @@ In particular, this dataset presents these fields for each multi-omic signal:
 19) "pathway_map" : KEGG orthology level 3
 
 Note, for the field "code", these are the possible IDs:
-"n1" = CAI + Molecular Weight
-"n2" = CAI + mRNA CCs 
-"n3" = Molecular Weigth  + mRNA CCs 
-"n4" = CAI + Molecular Weigth  + mRNA CCs
+1)  "n1" = CAI + Molecular Weight
+2)  "n2" = CAI + mRNA CCs 
+3)  "n3" = Molecular Weigth  + mRNA CCs 
+4)  "n4" = CAI + Molecular Weigth  + mRNA CCs
 
 While, for the operon compressed signals:
-"o1" = CAI + Molecular Weight
-"o2" = CAI + mRNA CCs 
-"o3" = Molecular Weigth  + mRNA CCs 
-"o4" = CAI + Molecular Weigth  + mRNA CCs
+1)  "o1" = CAI + Molecular Weight
+2)  "o2" = CAI + mRNA CCs 
+3)  "o3" = Molecular Weigth  + mRNA CCs
+4)  "o4" = CAI + Molecular Weigth  + mRNA CCs
