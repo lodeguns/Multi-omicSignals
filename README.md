@@ -7,6 +7,7 @@ This repository contains the manuscript mentioned in the title, and associated s
 
 
 ### Inter-organisms amplitude consensus (IOAC) procedure 
+In order to compare the signals between different organisms, an amplitude discretization process was applied. This procedure it is called: Inter-Organisms Amplitude Consensus (IOAC).
 
 ### Median change point detector in order to search the periodicity windows ( Algorithm 1) 
 
