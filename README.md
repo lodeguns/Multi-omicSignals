@@ -18,4 +18,38 @@ The optimized algorithm with which the scores of periodicity and propagation vel
 
 ![image](figures/plot1_supp.png)
 
-Note, in the paragraphs above we are providing a simple example, obviously these algorithms has been applied to all the signals generated for all the organisms and for all possible multi-omic combinations. To get the complete dataset with more than 2 million signals associated with all the functional classes, scores and various other statistics as it is described in the paper, it is possible to access the RData dataset [via this URL](https://thinfi.com/asxw). The password is: multi.org.2019 
+### Whole dataset of the multi-omic signals
+Note, in the paragraphs above we are providing a simple example, obviously these algorithms has been applied to all the signals generated for all the organisms and for all possible multi-omic combinations. To get the complete dataset with more than 2 million signals associated with all the functional classes, scores and various other statistics as it is described in the paper, it is possible to access the RData dataset [via this URL](https://thinfi.com/asxw). The password is: multi.org.2019.
+
+In particular, this dataset presents these fields for each multi-omic signal:
+1) "score" : the osc_s index, 
+2) "m.s"   : the average value of osc_s
+3) "med.s" : the median value of osc_s
+4) "sd.s"  : the standard deviation of osc_s
+5) "m.w"   : the average value of the period lengths
+6) "med.w" : the median value of the period lengths
+7) "sd.w"  : the standard deviation of the period lengths
+8) "change.w"     : number of periodic oscillations
+9) "v.change.w"   : velocity of propagation
+10) "path.l"      : length of the signal
+11) "n.path"      : KEGG pathway ID
+12) "exp.cr"      : COLOMBOS condition contrast ID
+13) "exp.ref"     : COLOMBOS treatment experiment ID
+14) "exp.ctr"     : COLOMBOS control experiment ID
+15) "kegg.id"     : KEGG organism ID
+16) "code"        : ID of the multi-omic combination
+17) "class"       : KEGG orthology level 1
+18) "func"        : KEGG orthology level 2
+19) "pathway_map" : KEGG orthology level 3
+
+Note, for the field "code", these are the possible IDs:
+"n1" = CAI + Molecular Weight
+"n2" = CAI + mRNA CCs 
+"n3" = Molecular Weigth  + mRNA CCs 
+"n4" = CAI + Molecular Weigth  + mRNA CCs
+
+While, for the operon compressed signals:
+"o1" = CAI + Molecular Weight
+"o2" = CAI + mRNA CCs 
+"o3" = Molecular Weigth  + mRNA CCs 
+"o4" = CAI + Molecular Weigth  + mRNA CCs
