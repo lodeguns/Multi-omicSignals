@@ -29,10 +29,6 @@ saveit <- function(..., string, file) {
 
 compute.phase.sync <- function(p.on, v.r)
 {
-  # p.on <- circuits$pathways.on
-  # w.m  <- circuits$med.path.window
-  # s.m  <- circuits$med.score.window
-  # v.r  <- circuits$ratio.window.length
   n.osc.net <- colnames(p.on)
   p.on <-  p.on[rowSums(p.on==0, na.rm=TRUE)<ncol(p.on), ]
   v.r  <-  v.r[rowSums(v.r==0, na.rm=TRUE)<ncol(v.r), ]
