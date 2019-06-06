@@ -19,9 +19,8 @@ The optimized algorithm with which the scores of periodicity and propagation vel
 ![image](figures/plot1_supp.png)
 
 #### Whole dataset of the multi-omic signals
-Note, in the paragraphs above we are providing a simple example, obviously these algorithms has been applied to all the signals generated for all the organisms and for all possible multi-omic combinations. To get the complete dataset with more than 2 million signals associated with all the functional classes, scores and various other statistics as it is described in the paper, it is possible to access the RData dataset [via this URL](https://thinfi.com/asxw). The password is: multi.org.2019.
 
-In particular, this dataset presents these fields for each multi-omic signal:
+Note, in order to make the algorithms described above faster and easier to use, we have provided simple examples. The same algorithms, however, have been applied to more than two million of mult-omic signals and the results obtained are collected in this dataset: [global.nt](https://thinfi.com/asxw). The password is: multi.org.2019.. In addition, the dataset already contains all the associations to the functional classes of KEGG Orthology and to the identifiers linked to the COLOMBOS experiments. More in detail, below we describe the fields of the dataset: 
 1) "score" : the osc_s index, 
 2) "m.s"   : the average value of osc_s
 3) "med.s" : the median value of osc_s
@@ -55,3 +54,4 @@ While, for the operon compressed signals:
 4)  "o4" = CAI + Molecular Weigth  + mRNA CCs
 
 #### Phase synchronizations and plots
+Once the dataset described above has been downloaded, it will be possible to analyze the phase synchronizations. To do this, in this section we provide a tool that can be configured in a few minutes in order to validate our results and perform your own analyzes on the same line as those described in the paper.
