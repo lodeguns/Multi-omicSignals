@@ -55,3 +55,4 @@ While, for the operon compressed signals:
 
 #### Phase synchronizations and plots
 Once the dataset described above has been downloaded, it will be possible to analyze the phase synchronizations. To do this, in this section we provide a tool that can be configured in a few minutes in order to validate our results and perform your own analyzes on the same line as those described in the paper.
+However, without running any script, all the intersections of the oscillatory networks with phi = 0.8 have been generated in pdf files. The analysis was done [between bacteria](phase_synchronization/between_org_upsets/) and [within bacteria](phase_synchronization/whitin_org_upsets/). In the respective section you can find the description of the files name structure.
