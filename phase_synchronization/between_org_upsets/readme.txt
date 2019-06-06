@@ -1,4 +1,4 @@
-The files generate from the script have this structure:
+The files generated from the script have this structure:
 
 "upset_[KO_Level]_[Multi-omic Combination].pdf
 
