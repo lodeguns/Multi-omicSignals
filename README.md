@@ -1,6 +1,6 @@
 # Bacterial multi-omic oscillatory networks
 ### Spatial periodicty and velocity of propagation in bacterial multi-omic network dynamics
-This repository contains the supplementary materials of the manuscript mentioned in the title, the whole data set of signals (**RData format**) and the associated source code written in **R** in order to replicate our analyses and to obtain other results considering several multi-omic combinations within and between bacteria.
+This repository contains the supplementary materials of the manuscript mentioned in the title, the whole data set of signals (**RData format**) and the associated source code, written in **R**, in order to replicate our analyses and to obtain other results considering several multi-omic combinations within and between bacteria.
 
 Should you need help running our code, please [contact us](mailto:fbardozzo@unisa.it).
 
