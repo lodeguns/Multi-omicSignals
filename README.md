@@ -16,7 +16,7 @@ In order to compare the signals between different organisms, an amplitude discre
 The median change point detection algorithm for the estimation of the half periodicity search windows is calculated as described [here](SupplementaryAlgo1.R). 
 
 #### Periodicity/Oscillation score and Velocity of propagation (Algorithm 2)
-The optimized algorithm with which the scores of periodicity and propagation velocity of the multi-omic spatial signal were calculated is [here](SupplementaryAlgo2.R).
+The scores of periodicity and propagation velocity for multi-omic spatial signal were calculated with the script linked [here](SupplementaryAlgo2.R).
 
 
 ![image](figures/plot1_supp.png)
