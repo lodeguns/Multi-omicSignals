@@ -15,10 +15,10 @@ Should you need help running our code, please [contact us](mailto:fbardozzo@unis
 In order to compare the signals between different organisms, an amplitude discretization process was applied. The number of levels of discretization is decided through the following procedure, that it is called: Inter Organisms Amplitude Consensus (IOAC) [source code here](ioac_procedure/Data_norm.R). The relative dependencies to the RData datasets are explicitly indicated in the source code.
 
 #### Median change point detector in order to search the periodicity windows ( Algorithm 1) 
-The median change point detection algorithm for the estimation of the half periodicity search windows is calculated as described [here](SupplementaryAlgo1.R). 
+The median change point detection algorithm for the estimation of the half periodicity search windows (theta) is calculated as described [here](SupplementaryAlgo1.R). See also the table of the [estimated thetas](table_of_thetas) applied for all the organisms and for all the multi-omic combinations. 
 
 #### Periodicity/Oscillation score and Velocity of propagation (Algorithm 2)
-The scores of periodicity and propagation velocity for multi-omic spatial signal were calculated with the script linked [here](SupplementaryAlgo2.R).
+The scores of periodicity and propagation velocity for multi-omic spatial signal were calculated with the script linked [here](SupplementaryAlgo2.R). See also the next subsecton for a whole dataset of these estimated values. 
 
 
 ![image](figures/plot1_supp.png)
