@@ -1,6 +1,6 @@
 ##
 ##    Median periodicity search window estimator
-##    
+##    = theta's estimator
 ##
 
 
