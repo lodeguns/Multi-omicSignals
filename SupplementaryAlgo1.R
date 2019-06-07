@@ -40,7 +40,6 @@ get.window = cmpfun(get.window.median.prev)
 multi.omic.signal = c(1,5,8,1,5,8,1,5,7,1,4,6,1,4,2,2,1,2,1,8,1,6,7)
 IOAC.bins         = 9
 mo.windows <- get.window(multi.omic.signal, length(multi.omic.signal), IOAC.bins)
-#mean(mo.windows)
-#sd(mo.windows)
+# see also tables of thetas
 algo1.period.estimation = theta = max(mo.windows)   #output 
 
