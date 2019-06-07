@@ -42,5 +42,5 @@ IOAC.bins         = 9
 mo.windows <- get.window(multi.omic.signal, length(multi.omic.signal), IOAC.bins)
 #mean(mo.windows)
 #sd(mo.windows)
-algo1.period.estimation = median(mo.windows)   #output 
+algo1.period.estimation = theta = max(mo.windows)   #output 
 
