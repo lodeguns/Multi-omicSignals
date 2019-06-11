@@ -11,19 +11,19 @@ Should you need help running our code, please [contact us](mailto:fbardozzo@unis
 
 
 
-#### Inter-organisms amplitude consensus (IOAC) procedure 
+#### Step 1 - Inter-organisms amplitude consensus (IOAC) procedure 
 In order to compare the signals between different organisms, an amplitude discretization process was applied. The number of levels of discretization is decided through the following procedure, that it is called: Inter Organisms Amplitude Consensus (IOAC) [source code here](ioac_procedure/Data_norm.R). The relative dependencies to the RData datasets are explicitly indicated in the source code.
 
-#### Median change point detector in order to search the periodicity windows ( Algorithm 1) 
+#### Step 2 -  Median change point detector in order to search the periodicity windows ( Algorithm 1) 
 The median change point detection algorithm for the estimation of the half periodicity search windows (theta) is calculated as described [here](SupplementaryAlgo1.R). See also the table of the [estimated thetas](table_of_thetas) applied for all the organisms and for all the multi-omic combinations. 
 
-#### Periodicity/Oscillation score and Velocity of propagation (Algorithm 2)
+#### Step 3 -  Periodicity/Oscillation score and Velocity of propagation (Algorithm 2)
 The scores of periodicity and propagation velocity for multi-omic spatial signal were calculated with the script linked [here](SupplementaryAlgo2.R). See also the next subsecton for a whole dataset of these estimated values. 
 
 
 ![image](figures/plot1_supp.png)
 
-#### Whole dataset of the multi-omic signals
+#### Step 4 -  Whole dataset of the multi-omic signals
 
 Note, in order to make the algorithms described above faster and easier to use, we have provided simple examples. The same algorithms, however, have been applied to more than two million of mult-omic signals and the results obtained are collected in this dataset: [global.nt](https://thinfi.com/asxw). The password is: ask to us.
 In addition, the dataset already contains all the associations to the functional classes of [KEGG Orthology](https://www.genome.jp/kegg-bin/get_htext?ko00001) and to the identifiers linked to the [COLOMBOS](http://colombos.net/) condition contrasts\experiments. More in detail, below we describe the fields of the dataset: 
@@ -59,6 +59,6 @@ While, for the operon compressed signals:
 3)  "o3" = Molecular Weigth  + mRNA CCs
 4)  "o4" = CAI + Molecular Weigth  + mRNA CCs
 
-#### Phase synchronizations and plots
+#### Step 5 -  Phase synchronizations and plots
 Once the dataset described above has been downloaded, it will be possible to analyze the [phase synchronizations](phase_synchronization/). To do this, in this section we provide [two scripts](phase_synchronization/). Through these scripts it is possible to interact with the signal dataset and conduct your own analyses in order to identify the oscillatory networks, for example by considering a restricted subset of organisms or only specific COLOMBOS experiments.
 However, in order to speed up the visualization of the plotted figures, all the intersections of the oscillatory networks with phi = 0.8 have been generated in pdf files. The analysis was done [between bacteria](phase_synchronization/between_org_upsets/) and [within bacteria](phase_synchronization/whitin_org_upsets/). In the respective section you can find the description of the files name structure. The relative dependencies to the RData datasets are explicitly indicated in the source code.
