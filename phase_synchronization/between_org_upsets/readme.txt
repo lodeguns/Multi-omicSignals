@@ -1,6 +1,6 @@
 The files generated from the script have this structure:
 
-"upset_[KO_Level]_[Multi-omic Combination].pdf
+"upset_[Multi-omic Combination]_[KO_Level].pdf
 
 [KO_Level]
 1 = "class" : KEGG orthology level 1
