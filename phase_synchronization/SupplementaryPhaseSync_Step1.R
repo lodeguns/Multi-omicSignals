@@ -348,27 +348,23 @@ get.circuits.pathways <- function(score, org, j = 3, n.path=NULL, static.omics=T
 get.circuits.pathways.compiled <- cmpfun(get.circuits.pathways)
 
 
-###
-# Here are computed and collected the intersections of active pahtways between organisms
-
+################################################################################################
+#### Here are computed and collected the intersections of active pahtways between organisms
+################################################################################################
 l.org.n <- c("bce:", "bsu:", "bth:", "cac:", "cje:", "eco:", "hpy:", "mtu:", "pae:", "sme:", "stm:")
-
-
-#list.matrix     <- vector("list", 6) 
 list.matrix.org <- vector("list", 6)
 list.circ       <- vector("list", 11)
-#list.ko.level   <- vector("list", 3)
-list.ko.level.org <- vector("list", 3)
+
+list.ko.level.org <- vector("list", 4)
 
 
 list.matrix.org.wl   <- vector("list", 6)
 list.circ.wl         <- vector("list", 11)
-list.ko.level.org.wl <- vector("list", 3)
+list.ko.level.org.wl <- vector("list", 4)
 
 
 for(moc in 1:6) #1:6
-{ 
-  for(KO.LVL in 1:3) #1:3
+{ for(KO.LVL in 1:4) #1:3
   {
     score_setted = 0.8
     set.org <-  l.org.n[[1]]
@@ -379,9 +375,9 @@ for(moc in 1:6) #1:6
                                                                n.path = NULL, 
                                                                static.omics = FALSE, 
                                                                global.nt)))
-    list.circ[1] <- list(circ.capt0[[1]])
+    list.circ[1] <- list(circ.capt0[[KO.LVL]])
     list.circ.wl[1] <- list(circ.capt0$ratio.window.length)
-    #FLAG.capt = TRUE
+
     for(org in 2:11)
     {
       set.org <-  l.org.n[[org]]
@@ -396,40 +392,28 @@ for(moc in 1:6) #1:6
                                                                  static.omics = FALSE, 
                                                                  global.nt)))
       
-      # name.c.ko.lvl <- colnames(bind.circ.cai.mw.exp[[KO.LVL]])
-      
-      # mat1 <- matrix(ncol=length(name.c.ko.lvl), nrow=length(l.org.n ))
       
       list.circ[org] <- list(circ.capt[[KO.LVL]])
       list.circ.wl[org] <- list(circ.capt$ratio.window.length)
-      #if(FLAG.capt)
-      #{  
-      #bind.circ1  <- smartbind(circ.capt0[[KO.LVL]], circ.capt[[KO.LVL]], fill=0)
-      #FLAG.capt = FALSE
-      #} 
-      #else
-      #{
-      #  bind.circ1  <- smartbind(bind.circ1 , circ.capt[[KO.LVL]], fill=0)
-      #}
+
       
       
     }
-    #bind.circ1 <- bind.circ1[apply(bind.circ1[,-1], 1, function(x) !all(x==0)),]
-    #list.ko.level[KO.LVL] <- list(bind.circ1)
+
     list.ko.level.org[KO.LVL] <- list(list.circ)
     list.ko.level.org.wl[KO.LVL] <- list(list.circ.wl)
   }
   
-  #list.matrix[moc] <- list(list.ko.level)
   list.matrix.org[moc] <- list(list.ko.level.org)
   list.matrix.org.wl[moc] <- list(list.ko.level.org.wl)
   
 }
 
 
-#saveit(list.matrix.org = list.matrix.org, string = "list.matrix.org", file ="list.matrix.org.RData")
-#saveit(list.matrix.org.wl = list.matrix.org.wl, string = "list.matrix.org.wl", file ="list.matrix.org.wl.RData")
-####
+saveit(list.matrix.org = list.matrix.org, string = "list.matrix.org", file ="list.matrix.org.RData")
+saveit(list.matrix.org.wl = list.matrix.org.wl, string = "list.matrix.org.wl", file ="list.matrix.org.wl.RData")
+###################################################################################################################
+###################################################################################################################
 View(list.matrix.org[[1]][[1]])
 View(list.matrix.org[[1]][[1]][[1]])
 
@@ -437,7 +421,12 @@ View(list.matrix.org[[1]][[1]][[1]])
 View(list.matrix.org[[1]][[1]])
 View(list.matrix.org[[1]][[1]][[1]])
 
-###
+
+
+
+###################################################################################################################
+###################################################################################################################
+###################################################################################################################
 # Here are computed and collected the intersections of active pahtways within organisms
 l.org.n <- c("bce:", "bsu:", "bth:", "cac:", "cje:", "eco:", "hpy:", "mtu:", "pae:", "sme:", "stm:")
 
@@ -449,7 +438,7 @@ list.ko.level   <- vector("list", 3)
 
 for(moc in 1:6) #1:6
 { 
-  for(KO.LVL in 1:3) #1:3
+  for(KO.LVL in 1:4) #1:3
   {
     score_setted = 0.8
     set.org <-  l.org.n[[1]]
@@ -460,7 +449,7 @@ for(moc in 1:6) #1:6
                                                                n.path = NULL, 
                                                                static.omics = FALSE, 
                                                                global.nt)))
-    list.circ[1] <- list(circ.capt0[[1]])
+    list.circ[1] <- list(circ.capt0[[KO.LVL]])
     list.circ.wl[1] <- list(circ.capt0$ratio.window.length)
     FLAG.capt = TRUE
     for(org in 2:11)
@@ -504,8 +493,9 @@ for(moc in 1:6) #1:6
   
 }
 
+###################################################################################################################
 
-#saveit(list.matrix = list.matrix, string = "list.matrix", file ="list.matrix.RData")
+saveit(list.matrix = list.matrix, string = "list.matrix", file ="list.matrix.RData")
 
 # ####
 # View(list.matrix.org[[1]][[1]])
@@ -534,10 +524,10 @@ DIM <- function( ... ){
 #View(list.matrix[[2]][[3]][[12]])
 #View(list.matrix.org[[6]][[3]][[11]])
 for(i in 1:6){
-  for (j in 1:3){
+  for (j in 1:4){
     for (k in 1:11){
       set.test <- list.matrix.org[[i]][[j]][[k]][apply(list.matrix.org[[i]][[j]][[k]][,-1], 1, function(x) !all(x==0)),]
-      pdf(file=paste("~/upsets/upset_", i, "_", j, "_", k, ".pdf"), onefile=FALSE)
+      pdf(file=paste("~/upset/upsets/upset_", i, "_", j, "_", k, ".pdf", sep=""), onefile=FALSE)
       ust <- upset(as.data.frame(set.test), nsets = 12 , main.bar.color = "black", order.by = "freq")
       dev.off()
     }
@@ -545,9 +535,9 @@ for(i in 1:6){
 }
 
 for (i in 1:6){
-  for (j in 1:3){
+  for (j in 1:4){
     set.test <- list.matrix[[i]][[j]][apply(list.matrix[[i]][[j]][,-1], 1, function(x) !all(x==0)),]
-    pdf(file=paste("~/upsets_1/upset_", i, "_", j, ".pdf"), onefile=FALSE)
+    pdf(file=paste("~/upset/upsets_1/upset_", i, "_", j, ".pdf", sep=""), onefile=FALSE)
     ust <- upset(as.data.frame(set.test), nsets = 12 , main.bar.color = "black", order.by = "freq")
     dev.off()
   }
@@ -560,9 +550,3 @@ for (i in 1:6){
 
 set.test <- list.matrix[[1]][[1]][apply(list.matrix[[1]][[1]][,-1], 1, function(x) !all(x==0)),]
 ust <- upset(as.data.frame(set.test), nsets = 12 , main.bar.color = "black", order.by = "freq")
-
-
-
-
-
-
