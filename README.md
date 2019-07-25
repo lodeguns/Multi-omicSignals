@@ -18,8 +18,8 @@ In order to compare the signals between different organisms, an amplitude discre
 The median change point detection algorithm for the estimation of the half periodicity search windows (theta) is calculated as described [here](SupplementaryAlgo1.R). See also the table of the [estimated thetas](table_of_thetas) applied for all the organisms and for all the multi-omic combinations. 
 
 #### Step 3 -  Periodicity/Oscillation score and Velocity of propagation (Algorithm 2)
-The scores of periodicity and propagation velocity for multi-omic spatial signal were calculated with the script linked [here](SupplementaryAlgo2.R). See also the next subsecton for a whole dataset of these estimated values. 
-
+The scores of periodicity and propagation velocity for multi-omic spatial signal were calculated with the script linked [here](SupplementaryAlgo2.R). In order to test the script in this source code we provide two simple toy examples.
+In the next subsecton we link the whole dataset of signals also with the periodicity and propagation velocity scores already computed. 
 
 ![image](figures/plot1_supp.png)
 
