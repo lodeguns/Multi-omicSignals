@@ -1,4 +1,6 @@
-The files generated from the script have this structure:
+Between organisms phase synchronizations
+The files collected in the tar.gz
+present this structure:
 
 "upset_[Multi-omic Combination]_[KO_Level].pdf
 
