@@ -1,6 +1,7 @@
 #  Understanding oscillatory dynamics in bacterial multi-omic networks
-### 
+### Pathway-based multi-omic analysis in bacterial organisms.}
 This repository contains the supplementary materials of the manuscript mentioned in the title, the whole data set of signals (**RData format**) and the associated source code, written in **R**, in order to replicate our analyses and to obtain other results considering several multi-omic combinations within and between bacteria.
+
 
 Should you need help running our code, please [contact us](mailto:fbardozzo@unisa.it).
 
@@ -38,9 +39,9 @@ In addition, the dataset already contains all the associations to the functional
 9) "v.change.w"   : the osc_k index
 10) "path.l"      : length of the signal
 11) "n.path"      : KEGG pathway ID
-12) "exp.cr"      : COLOMBOS condition contrast ID
-13) "exp.ref"     : COLOMBOS treatment experiment ID
-14) "exp.ctr"     : COLOMBOS control experiment ID
+12) "exp.cr"      : COLOMBOS v3.0 condition contrast ID
+13) "exp.ref"     : COLOMBOS v3.0 treatment experiment ID
+14) "exp.ctr"     : COLOMBOS v3.0 control experiment ID
 15) "kegg.id"     : KEGG organism ID
 16) "code"        : ID of the multi-omic combination
 17) "class"       : KEGG orthology level 1
