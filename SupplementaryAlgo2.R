@@ -144,7 +144,7 @@ oscillation.waveform.scores  <- function(altern, l.sc, t0, N, n.path){
                     n.path=n.path,
                     stringsAsFactors=FALSE)
   
-  colnames(ret) <- c("Oscillation/Periodicity score (osc_s)", "mean(osc_s)", "median(osc_s)", "sd(osc_s)", "multi-omic values mean(w)", "median(w)", "sd(w)", "number of changing windows", "velocity of propagation (osc_k)", "signal length", "name of the pathway")
+  colnames(ret) <- c("osc_s", "mean(osc_s)", "median(osc_s)", "sd(osc_s)", "multi-omic values mean(w)", "median(w)", "sd(w)", "number of changing windows", "osc_k", "signal length", "name of the pathway")
 
   
   return(ret)
