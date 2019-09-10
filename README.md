@@ -57,7 +57,7 @@ output:       osc_s =  0.6298701
 
 In the next subsecton we link the whole dataset of the multi-omic metric signals associated by experiments, organisms and pathways. 
 
-![image](figures/plot1_supp.png)
+
 
 #### Step 4 -  Whole dataset of the multi-omic signals
 
