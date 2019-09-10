@@ -34,6 +34,11 @@ IOAC.bins         =  8
 theta             =  3
 ...
 run algorithm2
+multi-omic variation: 4 2 6 4 3 7 4 2 6 4 2 6 4 3 7 4 2 6 4 2 6 4 3
+change points:        1  1 -1  1  1 -1  1  1 -1  1  1 -1  1  1 -1  1  1 -1  1  1 -1  1  1
+
+multi-omic amount per theta:  6 6 7 7 6 6 6 6 7 7 6 6 6 6 7
+half-period window length:    2 1 2 1 2 1 2 1 2 1 2 1 2 1 2
 ...
 output:       osc_s =  0.9068323
               osc_k =  0.6521739 
