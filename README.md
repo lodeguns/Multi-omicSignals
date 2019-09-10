@@ -1,4 +1,4 @@
-#  Understanding oscillatory dynamics in bacterial multi-omic networks
+#  Understanding oscillatory dynamics in bacterial multi-omic networks with signal metrics analysis
 ### Pathway-based multi-omic analysis in bacterial organisms.}
 This repository contains the supplementary materials of the manuscript mentioned in the title, the whole data set of signals (**RData format**) and the associated source code, written in **R**, in order to replicate our analyses and to obtain other results considering several multi-omic combinations within and between bacteria.
 
