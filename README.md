@@ -20,7 +20,15 @@ In order to compare the signals between different organisms, an amplitude discre
 The median change point detection algorithm for the estimation of the half periodicity search windows (theta) is calculated as described [here](SupplementaryAlgo1.R). See also the table of the [estimated thetas](table_of_thetas) applied for all the organisms and for all the multi-omic combinations. 
 
 #### Step 3 -  Oscillation indices (Algorithm 2)
-The oscillation indices (osc_s and osc_k) for multi-omic signal were calculated with the script linked [here](SupplementaryAlgo2.R). In order to test the script in this source code we provide two simple toy examples:
+The oscillation indices (osc_s and osc_k) for multi-omic signal were calculated with the script linked [here](SupplementaryAlgo2.R).
+
+**osc_s** is an oscillation index which relates the length of the half periods found along the signal with respect to their amplitude. 
+
+**osc_k** is an index that describes the cardinality of the half periods along the signal with respect to the signal length.
+
+
+
+In order to test the script in this source code we provide two simple toy examples:
 
 Example 1:
 ![image](figures/run1.png)
