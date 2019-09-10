@@ -72,7 +72,7 @@ In the next subsecton we link the whole dataset of the multi-omic metric signals
 #### Step 4 -  Whole dataset of the multi-omic signal metrics
 
 Note, in order to make the algorithms described above faster and easier to use, we have provided simple examples. The same algorithms, however, have been applied to more than two million of mult-omic signals and the results obtained are collected in this dataset: [global.nt](https://thinfi.com/c30r). The password is: text us.
-In addition, the dataset already contains all the associations to the functional classes of [KEGG Orthology](https://www.genome.jp/kegg-bin/get_htext?ko00001) and to the identifiers linked to the [COLOMBOS](http://colombos.net/) condition contrasts\experiments. More in detail, below we describe the fields of the dataset: 
+In addition, the dataset already contains all the associations to the functional classes of [KEGG Orthology](https://www.genome.jp/kegg-bin/get_htext?ko00001) and to the identifiers linked to the [COLOMBOS v3.0](http://colombos.net/) condition contrasts\experiments. More in detail, below we describe the fields of the dataset: 
 1) "score" : the osc_s index, 
 2) "m.s"   : the average value of osc_s
 3) "med.s" : the median value of osc_s
@@ -106,5 +106,5 @@ While, for the operon compressed signals:
 4)  "o4" = CAI + Molecular Weigth  + mRNA CCs
 
 #### Step 5 -  Phase synchronizations and plots
-Once the dataset described above has been downloaded, it will be possible to analyze the [phase synchronizations](phase_synchronization/). To do this, in this section we provide [two scripts](phase_synchronization/). Through these scripts it is possible to interact with the signal dataset and conduct your own analyses in order to identify the oscillatory networks, for example by considering a restricted subset of organisms or only specific COLOMBOS experiments.
+Once the dataset described above has been downloaded, it will be possible to analyze the [phase synchronizations](phase_synchronization/). To do this, in this section we provide [two scripts](phase_synchronization/). Through these scripts it is possible to interact with the signal metrics dataset and conduct your own analyses in order to identify the oscillatory networks, for example by considering a restricted subset of organisms or only specific COLOMBOS v3.0 experiments.
 However, in order to speed up the visualization of the plotted figures, all the intersections of the oscillatory networks with phi = 0.8 have been generated in pdf files. The analysis was done [between bacteria](phase_synchronization/between_org_upsets/) and [within bacteria](phase_synchronization/whitin_org_upsets/). In the respective section you can find the description of the files name structure. The relative dependencies to the RData datasets are explicitly indicated in the source code.
