@@ -1,6 +1,7 @@
 #  Understanding oscillatory dynamics in bacterial multi-omic networks with signal metrics analysis
-### Pathway-based multi-omic analysis in bacterial organisms.}
-This repository contains the supplementary materials of the manuscript mentioned in the title, the whole data set of signals (**RData format**) and the associated source code, written in **R**, in order to replicate our analyses and to obtain other results considering several multi-omic combinations within and between bacteria.
+### Pathway-based multi-omic analysis in bacterial organisms.
+
+This repository contains the supplementary materials of the manuscript mentioned in the title, the whole data set of the signal metrics (**RData format**) and the associated source code, written in **R**.
 
 
 Should you need help running our code, please [contact us](mailto:fbardozzo@unisa.it).
@@ -19,8 +20,39 @@ In order to compare the signals between different organisms, an amplitude discre
 The median change point detection algorithm for the estimation of the half periodicity search windows (theta) is calculated as described [here](SupplementaryAlgo1.R). See also the table of the [estimated thetas](table_of_thetas) applied for all the organisms and for all the multi-omic combinations. 
 
 #### Step 3 -  Oscillation indices (Algorithm 2)
-The oscillation indices (osc_s and osc_k) for multi-omic spatial signal were calculated with the script linked [here](SupplementaryAlgo2.R). In order to test the script in this source code we provide two simple toy examples.
-In the next subsecton we link the whole dataset of signals also with the oscillation indices already computed. 
+The oscillation indices (osc_s and osc_k) for multi-omic signal were calculated with the script linked [here](SupplementaryAlgo2.R). In order to test the script in this source code we provide two simple toy examples:
+
+Example 1:
+![image](figures/run1.png)
+```
+name.pathway  = "org:KEGGCODE1"
+multi.omic.signal =  c(1,5,7,1,5,8,1,5,7,1,5,7,1,5,8,1,5,7,1,5,7,1,5,8)   #discretized and ordered multi-omics
+IOAC.bins         =  8
+theta             =  3
+...
+run algorithm2
+...
+output:       osc_s =  0.9068323
+              osc_k =  0.6521739 
+```
+
+Example 2:
+![image](figures/run2.png)
+```
+name.pathway  = "org:KEGGCODE2"
+multi.omic.signal =  c(1,5,7,3,5,8,2,3,5,1,4,6,1,4,3,2,1,2,1,8,1,6,7)   #discretized and ordered multi-omics
+IOAC.bins         =  8
+theta             =  3
+...
+run algorithm2
+...
+output:       osc_s =  0.6298701
+              osc_k =  0.6818182 
+```
+
+
+
+In the next subsecton we link the whole dataset of the multi-omic metric signals associated by experiments, organisms and pathways. 
 
 ![image](figures/plot1_supp.png)
 
