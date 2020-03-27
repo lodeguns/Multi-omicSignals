@@ -1,16 +1,12 @@
-#  Understanding oscillatory dynamics in bacterial multi-omic networks with signal metrics analysis
-### Pathway-based multi-omic analysis in bacterial organisms.
+#  Signal metrics analysis of oscillatory patterns in bacterial multi-omic networks
+### Multi-omic oscillations in bacteria.
 
 This repository contains the supplementary materials of the manuscript mentioned in the title, the whole data set of the signal metrics (**RData format**) and the associated source code, written in **R**.
 
 
 Should you need help running our code, please [contact us](mailto:fbardozzo@unisa.it).
 
-**Motivation**: Biotechnology is centered on the exploiting genetic or/and protein regulatory networks towards the product of useful compounds. It is known that these networks involve more than one type of biomolecule as well as biological processes operating at multiple omic levels. This allows to combine information from single-omics into a multi-omic space. The projection of the molecular networks on this space potentially leads to the discovery of new features, revealing regularities that describe well-understood or unknown bacterial mechanisms and organism specific network dynamics. 
 
-**Results**: Our group has previously recognized oscillations in E.\emph{coli} networks dynamics when multi-omic patterns are obtained. By using models adopted from signal processing and communication engineering, this work focus on the characterization of the intensity and extension of oscillations across taxa, and identify metrics that can allow biotechnology explanation. Our research deal with 11 different bacteria analysis. Thus, we generate and analyze thousands of multi-omic pathway-based signals integrating the gene order information, codon usage, gene expression, protein molecular weight at several functional levels. Our analyses reveal the existence of oscillations in the pathway-based signals. Moreover, we show interesting evidence that the oscillatory networks present common behaviours with a combined dynamic response to perturbations. Thus, we obtain a meaningful picture of the oscillatory networks dynamics and their circuital interplay per experiments. We validate these results through a multi-organism comparative analysis.
-
-**Conclusion**: In this work, we introduced a novel study on bacterial multi-omic oscillatory networks focused on two novel pathway-based multi-omic signal metrics. By the analysis of these metrics it is possible to provide interesting clues about the oscillatory network features which proves that the multi-omic oscillations exist in nature. Furthermore, we founded clear evidence that oscillatory networks could be synchronized in response to perturbations to show a multi-functional dynamic interplay. Moreover, we have shown how these analyses can be extended to more organisms and related to the phylogenetic tree. We provided algorithmic methodologies, accompanied by a tool, in order to  deepen and extend our research. This work can be applied in the field of biotechnology on multi-omic oscillations and regulation dynamics.
 
 
 #### Step 1 - Inter-organisms amplitude consensus (IOAC) procedure 
