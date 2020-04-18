@@ -67,7 +67,7 @@ In the next subsecton we link the whole dataset of the multi-omic metric signals
 
 #### Step 4 -  Whole dataset of the multi-omic signal metrics
 
-Note, in order to make the algorithms described above faster and easier to use, we have provided simple examples. The same algorithms, however, have been applied to more than two million of mult-omic signals and the results obtained are collected in this dataset: [global.nt](https://thinfi.com/mw9k). The password is: MO00@.
+Note, in order to make the algorithms described above faster and easier to use, we have provided simple examples. The same algorithms, however, have been applied to more than two million of mult-omic signals and the results obtained are collected in this dataset: [MOSignalMetrics/global.nt](https://thinfi.com/mw9k). The password is: 'MO00@.'
 In addition, the dataset already contains all the associations to the functional classes of [KEGG Orthology](https://www.genome.jp/kegg-bin/get_htext?ko00001) and to the identifiers linked to the [COLOMBOS v3.0](http://colombos.net/) condition contrasts\experiments. More in detail, below we describe the fields of the dataset: 
 1) "score" : the osc_s index, 
 2) "m.s"   : the average value of osc_s
