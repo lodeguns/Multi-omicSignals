@@ -6,9 +6,13 @@ This repository contains the supplementary materials of the manuscript mentioned
 
 Should you need help running our code, please [contact us](mailto:fbardozzo@unisa.it).
 
+### Published paper
+Here the whole paper [OxfordBioLink](https://doi.org/10.1093/bioinformatics/btaa966)
+
+
 ### Citation
 
-'''
+```
 @article{10.1093/bioinformatics/btaa966,
     author = {Bardozzo, Francesco and Lió, Pietro and Tagliaferri, Roberto},
     title = "{Signal metrics analysis of oscillatory patterns in bacterial multi-omic networks}",
@@ -21,8 +25,7 @@ Should you need help running our code, please [contact us](mailto:fbardozzo@unis
     note = {btaa966},
     eprint = {https://academic.oup.com/bioinformatics/advance-article-pdf/doi/10.1093/bioinformatics/btaa966/34297870/btaa966.pdf},
 }
-
-'''
+```
 
 
 #### Step 1 - Inter-organisms amplitude consensus (IOAC) procedure 
