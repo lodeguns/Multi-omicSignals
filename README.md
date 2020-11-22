@@ -6,7 +6,23 @@ This repository contains the supplementary materials of the manuscript mentioned
 
 Should you need help running our code, please [contact us](mailto:fbardozzo@unisa.it).
 
+### Citation
 
+'''
+@article{10.1093/bioinformatics/btaa966,
+    author = {Bardozzo, Francesco and Lió, Pietro and Tagliaferri, Roberto},
+    title = "{Signal metrics analysis of oscillatory patterns in bacterial multi-omic networks}",
+    journal = {Bioinformatics},
+    year = {2020},
+    month = {11},
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/btaa966},
+    url = {https://doi.org/10.1093/bioinformatics/btaa966},
+    note = {btaa966},
+    eprint = {https://academic.oup.com/bioinformatics/advance-article-pdf/doi/10.1093/bioinformatics/btaa966/34297870/btaa966.pdf},
+}
+
+'''
 
 
 #### Step 1 - Inter-organisms amplitude consensus (IOAC) procedure 
@@ -104,3 +120,6 @@ While, for the operon compressed signals:
 #### Step 5 -  Phase synchronizations and plots
 Once the dataset described above has been downloaded, it will be possible to analyze the [phase synchronizations](phase_synchronization/). To do this, in this section we provide [two scripts](phase_synchronization/). Through these scripts it is possible to interact with the signal metrics dataset and conduct your own analyses in order to identify the oscillatory networks, for example by considering a restricted subset of organisms or only specific COLOMBOS v3.0 experiments.
 However, in order to speed up the visualization of the plotted figures, all the intersections of the oscillatory networks with phi = 0.8 have been generated in pdf files. The analysis was done [between bacteria](phase_synchronization/between_org_upsets/) and [within bacteria](phase_synchronization/whitin_org_upsets/). In the respective section you can find the description of the files name structure. The relative dependencies to the RData datasets are explicitly indicated in the source code.
+
+###Licence
+The source, the material, the figures are under the same licence of Oxford Bioinformatics Journal
